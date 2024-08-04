@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'name' => 'Simple Math Excercise PDF maker',
+    'name' => 'Math excercise PDF maker',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [

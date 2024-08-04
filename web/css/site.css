@@ -96,7 +96,7 @@ body {
   border: none;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -165,4 +165,14 @@ body {
   background-color: #8e24aa;
   color: #fff;
   height: 40px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 0 auto;
 }
