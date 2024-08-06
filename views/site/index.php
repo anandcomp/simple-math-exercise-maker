@@ -5,7 +5,6 @@ use yii\widgets\ActiveForm;
 ?>
 <div class="card p-3 py-4">
     <?php
-    $need_answer_sheet = $math_type = $first_number = $second_number = $number_of_problems = $language = 1;
     $form = ActiveForm::begin(); ?>
     <div class="container mt-5">
         <div class="row">
@@ -58,11 +57,11 @@ use yii\widgets\ActiveForm;
                 <div class="form-group">
                     <label for="pwd">Number of problems</label>
                     <?= Html::dropDownList('number_of_problems', $number_of_problems, [
-                        '1' => '12',
-                        '2' => '16',
-                        '3' => '24',
-                        '4' => '32',
-                        '5' => '50'
+                        '12' => '12',
+                        '16' => '16',
+                        '24' => '24',
+                        '32' => '32',
+                        '48' => '48'
                     ], ['class' => 'form-select mt-2 form-select-sm']) ?>
                 </div>
             </div>
