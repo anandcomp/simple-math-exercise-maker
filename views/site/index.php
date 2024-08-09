@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 ?>
-<div class="card p-3 py-4">
+<div class="card">
     <?php
     $form = ActiveForm::begin(); ?>
     <div class="container mt-5">
@@ -69,7 +69,7 @@ use yii\widgets\ActiveForm;
         <div class="row pt-4">
             <div class="col-12">
                 <div class="form-group">
-                    <?= Html::submitButton('Generate Math PDF', ['class' => 'btn btn-success btn-block btn-sm', 'style' => 'width: 100%;']) ?>
+                    <?= Html::submitButton('Generate Math PDF', ['class' => 'btn btn-primary btn-block btn-sm', 'style' => 'width: 100%;']) ?>
                 </div>
             </div>
         </div>

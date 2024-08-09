@@ -7,8 +7,6 @@ use app\assets\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
 
@@ -30,30 +28,19 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <body class="d-flex flex-column h-100">
     <?php $this->beginBody() ?>
-    <header id="header">
-        <?php
-        NavBar::begin([
-            'brandLabel' => Yii::$app->name,
-            'brandUrl' => Yii::$app->homeUrl,
-            'options' => ['class' => 'navbar-expand-md navbar-light bg-light fixed-top mt-auto']
-        ]);
-        echo Nav::widget([
-            'options' => ['class' => 'navbar-nav'],
-            'items' => [
-                // ['label' => 'About', 'url' => ['/site/about']]
-            ]
-        ]);
-        NavBar::end();
-        ?>
-    </header>
+    <div class="container pt-3 text-center text-primary">
+        <h3>Math excercise PDF maker</h3>
+    </div>
     <main id="main" class="flex-shrink-0" role="main">
         <div class="container">
             <?php if (!empty($this->params['breadcrumbs'])) : ?>
                 <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
             <?php endif ?>
             <?= Alert::widget() ?>
-            <div class="row pt-2">
-                <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12"><?= $content ?></div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+                    <?= $content ?>
+                </div>
                 <!-- <div class="col-md-2 col-lg-2 col-xl-2">
                     <div class="row d-flex justify-content-center">
                         <div class="text-center">
