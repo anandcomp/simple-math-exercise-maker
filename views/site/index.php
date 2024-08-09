@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
     $form = ActiveForm::begin(); ?>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <label for="email">Basic arithmetic operations</label>
                     <?= Html::dropDownList('math_type', $math_type, [
@@ -19,17 +19,9 @@ use yii\widgets\ActiveForm;
                     ], ['class' => 'form-select mt-2 form-select-sm']) ?>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="form-group">
-                    <label for="pwd">Language</label>
-                    <?= Html::dropDownList('language', $language, [
-                        '1' => 'English'
-                    ], ['class' => 'form-select mt-2 form-select-sm']) ?>
-                </div>
-            </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-xs-12 col-sm-12 col-md-6">
                 <div class="form-group">
                     <label for="email">First number</label>
                     <?= Html::dropDownList('first_number', $first_number, [
@@ -40,7 +32,7 @@ use yii\widgets\ActiveForm;
                     ], ['class' => 'form-select mt-2 form-select-sm']) ?>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-xs-12 col-sm-12 col-md-6">
                 <div class="form-group">
                     <label for="pwd">Second number</label>
                     <?= Html::dropDownList('second_number', $second_number, [
@@ -53,7 +45,7 @@ use yii\widgets\ActiveForm;
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-xs-12 col-sm-12 col-md-6">
                 <div class="form-group">
                     <label for="pwd">Number of problems</label>
                     <?= Html::dropDownList('number_of_problems', $number_of_problems, [
@@ -65,7 +57,7 @@ use yii\widgets\ActiveForm;
                     ], ['class' => 'form-select mt-2 form-select-sm']) ?>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-xs-12 col-sm-12 col-md-6">
                 <div class="form-group">
                     <label for="pwd">Need answer sheet ?</label>
                     <?= Html::dropDownList('need_answer_sheet', $need_answer_sheet, [
@@ -78,7 +70,7 @@ use yii\widgets\ActiveForm;
         <div class="row pt-4">
             <div class="col-4"></div>
             <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-4 col-6 col-xs-12 col-sm-12 col-md-6">
                 <div class="form-group">
                     <?= Html::submitButton('Generate PDF', ['class' => 'btn btn-danger btn-block btn-sm', 'style' => 'width: 100%;']) ?>
                 </div>

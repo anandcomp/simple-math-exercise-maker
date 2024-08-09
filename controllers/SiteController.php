@@ -103,13 +103,13 @@ class SiteController extends Controller
                 'mode' => Pdf::MODE_CORE,
                 'format' => Pdf::FORMAT_A4,
                 'orientation' => Pdf::ORIENT_PORTRAIT,
-                'destination' => Pdf::DEST_BROWSER,
+                'destination' => Pdf::DEST_DOWNLOAD,
                 'content' => $content,
                 'cssFile' => 'css/pdf.css',
-                'options' => ['title' => 'agancode.com'],
+                'options' => ['title' => 'math'],
                 'methods' => [
-                    'SetHeader' => ['Math excercise PDF maker'],
-                    'SetFooter' => ['agancode.com / Math excercise PDF maker / {PAGENO}'],
+                    'SetHeader' => ['math excercise pdf maker'],
+                    'SetFooter' => ['anand ganesan / math excercise pdf maker / {PAGENO}'],
                 ]
             ]);
             return $pdf->render();

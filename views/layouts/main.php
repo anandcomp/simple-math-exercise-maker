@@ -53,14 +53,12 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <?php endif ?>
             <?= Alert::widget() ?>
             <div class="row pt-2">
-                <div class="card-deck col-8"><?= $content ?></div>
+                <div class="col-8"><?= $content ?></div>
                 <div class="col-4">
-                    <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="text-center">
-                                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="agancode" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/agancode?trk=profile-badge"></a>
-                                </div>
-                            </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="text-center">
+                            <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="agancode" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/agancode?trk=profile-badge"></a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -70,7 +68,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <footer id="footer" class="mt-auto py-3 bg-light">
         <div class="container">
             <div class="row text-muted">
-                <div class="col-md-6 text-center text-md-start">&copy; agancode.com <?= date('Y') ?></div>
+                <div class="col-md-6 text-center text-md-start">&copy; Anand Ganesan <?= date('Y') ?></div>
             </div>
         </div>
     </footer>
