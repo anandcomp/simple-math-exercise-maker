@@ -14,9 +14,8 @@ use yii\widgets\ActiveForm;
                     <?= Html::dropDownList('math_type', $math_type, [
                         '1' => 'Addition',
                         '2' => 'Subtraction',
-                        '3' => 'Multiplication',
-                        '4' => 'Division'
-                    ], ['class' => 'form-select mt-2 form-select-sm']) ?>
+                        '3' => 'Multiplication'
+                    ], ['class' => 'form-select mt-2 form-select-md']) ?>
                 </div>
             </div>
         </div>
@@ -29,7 +28,7 @@ use yii\widgets\ActiveForm;
                         '2' => '10 to 100',
                         '3' => '100 to 1000',
                         '4' => 'Any'
-                    ], ['class' => 'form-select mt-2 form-select-sm']) ?>
+                    ], ['class' => 'form-select mt-2 form-select-md']) ?>
                 </div>
             </div>
             <div class="col-6 col-xs-12 col-sm-12 col-md-6">
@@ -40,7 +39,7 @@ use yii\widgets\ActiveForm;
                         '2' => '10 to 99',
                         '3' => '100 to 999',
                         '4' => 'Any'
-                    ], ['class' => 'form-select mt-2 form-select-sm']) ?>
+                    ], ['class' => 'form-select mt-2 form-select-md']) ?>
                 </div>
             </div>
         </div>
@@ -54,7 +53,7 @@ use yii\widgets\ActiveForm;
                         '24' => '24',
                         '32' => '32',
                         '48' => '48'
-                    ], ['class' => 'form-select mt-2 form-select-sm']) ?>
+                    ], ['class' => 'form-select mt-2 form-select-md']) ?>
                 </div>
             </div>
             <div class="col-6 col-xs-12 col-sm-12 col-md-6">
@@ -63,16 +62,14 @@ use yii\widgets\ActiveForm;
                     <?= Html::dropDownList('need_answer_sheet', $need_answer_sheet, [
                         '1' => 'No',
                         '2' => 'Yes'
-                    ], ['class' => 'form-select mt-2 form-select-sm']) ?>
+                    ], ['class' => 'form-select mt-2 form-select-md']) ?>
                 </div>
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4 col-6 col-xs-12 col-sm-12 col-md-6">
+            <div class="col-12">
                 <div class="form-group">
-                    <?= Html::submitButton('Generate PDF', ['class' => 'btn btn-danger btn-block btn-sm', 'style' => 'width: 100%;']) ?>
+                    <?= Html::submitButton('Generate Math PDF', ['class' => 'btn btn-success btn-block btn-sm', 'style' => 'width: 100%;']) ?>
                 </div>
             </div>
         </div>

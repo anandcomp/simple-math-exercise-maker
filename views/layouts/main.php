@@ -53,15 +53,15 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <?php endif ?>
             <?= Alert::widget() ?>
             <div class="row pt-2">
-                <div class="col-8"><?= $content ?></div>
-                <div class="col-4">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12"><?= $content ?></div>
+                <!-- <div class="col-md-2 col-lg-2 col-xl-2">
                     <div class="row d-flex justify-content-center">
                         <div class="text-center">
-                            <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="agancode" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/agancode?trk=profile-badge"></a>
-                            </div> -->
+                            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="agancode" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/agancode?trk=profile-badge"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>

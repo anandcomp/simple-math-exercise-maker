@@ -9,8 +9,7 @@
 <table>
     <?php
     $count = 1;
-    ?>
-    <?php foreach ($data as $d) {
+    foreach ($data as $d) {
         if ($count == 1 || $count == 5) {
             if ($count == 5) {
                 $count = 1;
@@ -26,7 +25,7 @@
                 </div>
                 <div>
                     <span class="operation">
-                        <?= $d['operation']; ?>
+                        <?= "( " . $d['operation'] . " )&nbsp;&nbsp;&nbsp;"; ?>
                     </span>
                     <span class="number">
                         <?= $d['second_number']; ?>
@@ -65,7 +64,7 @@
                     </div>
                     <div>
                         <span class="operation">
-                            <?= $d['operation']; ?>
+                            <?= "( " . $d['operation'] . " )&nbsp;&nbsp;&nbsp;"; ?>
                         </span>
                         <span class="number">
                             <?= $d['second_number']; ?>

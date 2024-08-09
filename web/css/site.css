@@ -93,7 +93,7 @@ body {
 }
 
 .card {
-  border: none;
+  border: 1px solid #6D8EA0;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -107,27 +107,10 @@ body {
   top: 0;
   width: 4px;
   height: 100%;
-  background-color: #e1bee7;
+  background-color: #eae9eb;
   transform: scaleY(1);
   transition: all 0.5s;
   transform-origin: bottom;
-}
-
-.card:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #8e24aa;
-  transform: scaleY(0);
-  transition: all 0.5s;
-  transform-origin: bottom;
-}
-
-.card:hover::after {
-  transform: scaleY(1);
 }
 
 .fonts {
