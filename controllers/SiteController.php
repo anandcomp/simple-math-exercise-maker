@@ -109,7 +109,7 @@ class SiteController extends Controller
                 'options' => ['title' => 'math'],
                 'methods' => [
                     'SetHeader' => ['math excercise pdf maker'],
-                    'SetFooter' => ['anand ganesan / math excercise pdf maker / {PAGENO}'],
+                    'SetFooter' => ['Anand ganesan / math excercise pdf maker / {PAGENO}'],
                 ]
             ]);
             return $pdf->render();
